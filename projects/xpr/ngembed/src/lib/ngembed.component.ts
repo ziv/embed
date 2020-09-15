@@ -32,7 +32,7 @@ export class NgembedComponent implements OnInit {
     // attach all scripts...
     this.scripts.forEach(src => {
       const script = document.createElement('script');
-      script.src = `${this.src}/${src}`;
+      script.src = `${this.src}/${src}.js`;
       script.defer = true;
       shadow.appendChild(script);
     });
@@ -41,7 +41,7 @@ export class NgembedComponent implements OnInit {
     this.styles.forEach(href => {
       const link = document.createElement('link');
       link.rel = 'stylesheet';
-      link.href = href;
+      link.href = `${href}.css`;
       shadow.appendChild(link);
     });
   }
