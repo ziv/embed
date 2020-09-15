@@ -6,15 +6,15 @@ import {Component, ElementRef, Input, OnInit} from '@angular/core';
 })
 export class NgembedComponent implements OnInit {
   @Input() src = '';
-  @Input() scripts: string[] = [];
-  @Input() styles: string[] = [];
+  @Input() scripts: string[] = ['runtime', 'polyfills', 'main'];
+  @Input() styles: string[] = ['styles'];
   @Input() tag = '';
 
   constructor(private el: ElementRef) {
   }
 
   ngOnInit(): void {
-    if (!this.src || !this.scripts.length || !this.tag) {
+    if (!this.src || !this.tag) {
       // nothing to do
       return;
     }
@@ -24,9 +24,9 @@ export class NgembedComponent implements OnInit {
   render(): void {
     // let's create shadow root
     const shadow = this.el.nativeElement.attachShadow({mode: 'open'});
-    // and our custom element
+    // ...and our custom element
     const custom = document.createElement(this.tag);
-    // and connect
+    // ..and then connect
     shadow.appendChild(custom);
 
     // attach all scripts...
