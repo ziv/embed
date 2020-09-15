@@ -1,6 +1,11 @@
 {
   "name": "@xpr/ngembed",
   "version": "0.0.1",
+  "description": "Angular embedded",
+  "homepage": "https://github.com/ziv/ngembed",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "peerDependencies": {
     "@angular/common": "^10.0.14",
     "@angular/core": "^10.0.14"
