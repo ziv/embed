@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgembedComponent } from './ngembed.component';
+import { EmbedComponent } from './embed.component';
 
-describe('NgembedComponent', () => {
-  let component: NgembedComponent;
-  let fixture: ComponentFixture<NgembedComponent>;
+describe('EmbedComponent', () => {
+  let component: EmbedComponent;
+  let fixture: ComponentFixture<EmbedComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgembedComponent ]
+      declarations: [ EmbedComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgembedComponent);
+    fixture = TestBed.createComponent(EmbedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

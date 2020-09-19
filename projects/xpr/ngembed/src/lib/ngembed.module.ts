@@ -1,9 +1,12 @@
 import {NgModule} from '@angular/core';
-import {NgembedComponent} from './ngembed.component';
+import {CommonModule} from '@angular/common';
+import { EmbedDirective } from './embed.directive';
+import { EmbedComponent } from './embed/embed.component';
 
 @NgModule({
-  declarations: [NgembedComponent],
-  exports: [NgembedComponent]
+  imports: [CommonModule],
+  declarations: [EmbedDirective, EmbedComponent],
+  exports: [EmbedDirective]
 })
 export class NgembedModule {
 }

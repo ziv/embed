@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/xpr/ngembed",
       "sourceRoot": "projects/xpr/ngembed/src",
-      "prefix": "ngd",
+      "prefix": "ng",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
