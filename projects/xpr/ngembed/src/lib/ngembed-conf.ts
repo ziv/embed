@@ -13,7 +13,7 @@ export class NgembedConf {
   /**
    * List of scripts to embed
    */
-  scripts = ['index.js'];
+  scripts = ['index.js', 'polyfill-webcomp.js'];
 
   /**
    * List of styles to embed

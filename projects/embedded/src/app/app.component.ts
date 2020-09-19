@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'demo-app',
   template: '<h1>Embedded Ng App: {{title}}</h1>'
 })
 export class AppComponent {
-  title = 'embedded';
+  title = '!embedded!';
 }

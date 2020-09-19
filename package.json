@@ -3,6 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "xpr": "ng build --prod",
+    "embed": "ng build --prod",
+    "embedded": "ng build --project embedded --prod --output-hashing=none --single-bundle",
+    "demo": "ng build --project demo",
+    "prebuild:demp": "rm -rf dist/demo",
+    "build:demo": "npm build --prod --project demo",
     "start": "npm run build && cd dist/xpr/ngembed && npm publish --access public",
     "prebuild": "rm -rf dist",
     "build": "ng build --prod",
