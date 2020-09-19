@@ -8,7 +8,12 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prebuild:embedded": "rm -rf dist/embedded",
+    "build:embedded": "ng build --project embedded --prod --output-hashing=none --single-bundle",
+    "postinstall": "ngcc",
+    "prebuild:embedded:externals": "rm -rf dist/embedded",
+    "build:embedded:externals": "ng build --extra-webpack-config projects/embedded/webpack.externals.js --prod --project embedded --single-bundle --output-hashing=none"
   },
   "private": false,
   "dependencies": {
@@ -20,6 +25,8 @@
     "@angular/platform-browser": "~10.0.9",
     "@angular/platform-browser-dynamic": "~10.0.9",
     "@angular/router": "~10.0.9",
+    "@webcomponents/webcomponentsjs": "^2.4.4",
+    "ngx-build-plus": "^10.1.1",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"

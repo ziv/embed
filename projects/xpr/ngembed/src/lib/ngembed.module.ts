@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import { EmbedDirective } from './embed.directive';
-import { EmbedComponent } from './embed/embed.component';
+import { EmbedComponent } from './embed.component';
 
 @NgModule({
   imports: [CommonModule],
