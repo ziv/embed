@@ -4,9 +4,9 @@ import {Component, ViewEncapsulation} from '@angular/core';
   selector: 'demo-app',
   styles: [`
     div {
-      background-color: cornflowerblue;
+      background-color: #6c86be;
       padding: 1em;
-      border: 1px dotted red;
+      border: 1px dotted #ff0000;
     }
   `],
   template: '<div><h1>Embedded Ng App: {{title}}</h1></div>',
