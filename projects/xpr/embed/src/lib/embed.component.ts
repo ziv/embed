@@ -13,18 +13,14 @@ export class EmbedComponent implements OnInit {
   @Input() tag = '';
 
   constructor(private el: ElementRef) {
-    console.log('start');
-    console.log(el);
   }
 
   ngOnInit(): void {
-    console.log('ngOnInit');
     const el = this.el.nativeElement;
     const src = this.src;
     const tag = this.tag;
 
     if (src === '' || tag === '') {
-      console.log('nada');
       return;
     }
 

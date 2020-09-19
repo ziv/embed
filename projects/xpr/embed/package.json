@@ -1,6 +1,7 @@
 {
   "name": "@xpr/embed",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "description": "Angular embed module",
   "peerDependencies": {
     "@angular/common": "^10.0.14",
     "@angular/core": "^10.0.14"
