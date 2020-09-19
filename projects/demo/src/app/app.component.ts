@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {NgembedConf} from '../../../../dist/xpr/ngembed';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +7,4 @@ import {NgembedConf} from '../../../../dist/xpr/ngembed';
 })
 export class AppComponent {
   title = 'demo';
-  conf: NgembedConf = new NgembedConf('demo-app');
 }

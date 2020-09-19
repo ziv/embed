@@ -1,6 +1,6 @@
-import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {EmbedComponent} from './embed.component';
+import { EmbedComponent } from './embed.component';
 
 describe('EmbedComponent', () => {
   let component: EmbedComponent;

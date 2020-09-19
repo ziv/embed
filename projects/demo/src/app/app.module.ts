@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {NgembedModule} from '../../../../dist/xpr/ngembed';
 import {CommonModule} from '@angular/common';
+import {EmbedModule} from '@xpr/embed';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,7 @@ import {CommonModule} from '@angular/common';
   imports: [
     BrowserModule,
     CommonModule,
-    NgembedModule
+    EmbedModule
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

@@ -23,6 +23,14 @@
       "@xpr/ngembed": [
         "dist/xpr/ngembed/xpr-ngembed",
         "dist/xpr/ngembed"
+      ],
+      "embed": [
+        "dist/embed/embed",
+        "dist/embed"
+      ],
+      "@xpr/embed": [
+        "dist/xpr/embed/xpr-embed",
+        "dist/xpr/embed"
       ]
     }
   },

@@ -24,6 +24,18 @@
     },
     {
       "path": "./projects/embedded/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/embed/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/embed/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/xpr/embed/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/xpr/embed/tsconfig.spec.json"
     }
 ]
 }
