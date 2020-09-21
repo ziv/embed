@@ -1,37 +1,37 @@
 import {Component, ElementRef, Input, OnInit} from '@angular/core';
 
-const styles = ['styles.css'];
-const scripts = ['main.js', 'polyfill-webcomp.js'];
-
-
 @Component({
   selector: 'xpr-embed',
   template: '<ng-content></ng-content>'
 })
 export class EmbedComponent implements OnInit {
-  @Input() src = '';
+  @Input() src = '/assets';
   @Input() tag = '';
+  @Input() styles = ['styles.css'];
+  @Input() scripts = ['main.js', 'polyfill-webcomp.js'];
 
   constructor(private el: ElementRef) {
-    console.log('start');
-    console.log(el);
   }
 
   ngOnInit(): void {
-    console.log('ngOnInit');
-    const el = this.el.nativeElement;
-    const src = this.src;
-    const tag = this.tag;
+    const [el, src, tag, styles, scripts] = [
+      this.el.nativeElement,
+      this.src,
+      this.tag,
+      this.styles,
+      this.scripts
+    ];
 
-    if (src === '' || tag === '') {
-      console.log('nada');
+    // no source, no tag nad no scripts?
+    if (src === '' || tag === '' || scripts.length < 1) {
+      // nothing to do
       return;
     }
 
     // let's create a shadow 👻
     const shadow = el.attachShadow({mode: 'open'});
 
-    // attach css
+    // attach css to 👻
     styles.forEach(style => {
       const e = document.createElement('link');
       e.rel = 'stylesheet';
@@ -39,7 +39,7 @@ export class EmbedComponent implements OnInit {
       shadow.appendChild(e);
     });
 
-    // attach scripts
+    // attach scripts to 👻
     scripts.forEach(script => {
       const e = document.createElement('script');
       e.src = `${src}/${script}`;
@@ -47,7 +47,7 @@ export class EmbedComponent implements OnInit {
       shadow.appendChild(e);
     });
 
-    // and finally, a custom element
+    // and finally, a custom element created in 👻
     shadow.appendChild(document.createElement(tag));
   }
 }
