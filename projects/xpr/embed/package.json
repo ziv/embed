@@ -1,7 +1,8 @@
 {
   "name": "@xpr/embed",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Embed Angular application in any Angular application",
+  "homepage": "https://github.com/ziv/embed",
   "peerDependencies": {
     "@angular/common": "^10.0.14",
     "@angular/core": "^10.0.14"
