@@ -47,5 +47,5 @@ Preparing embedded Angular app steps:
 * Import `XprEmbed` module to your `AppModule`
 * Add `xpr-embed` tag to your template:
   ```html
-  <xpr-embed tag="my-app" p></xpr-embed>
+  <xpr-embed tag="my-app"></xpr-embed>
   ```

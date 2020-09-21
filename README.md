@@ -1,4 +1,4 @@
-# Angular Embed
+# @xpr/embed - Angular Embed
 
 An easy way to embed Angular application in another Angular application.
 
@@ -44,5 +44,8 @@ Preparing embedded Angular app steps:
   ```
   npm i @xpr/embed
   ```
-* Import `XprEmbed' module to your `AppModule`
-
+* Import `XprEmbed` module to your `AppModule`
+* Add `xpr-embed` tag to your template:
+  ```html
+  <xpr-embed tag="my-app"></xpr-embed>
+  ```

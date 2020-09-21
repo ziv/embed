@@ -1,6 +1,6 @@
 {
   "name": "@xpr/embed",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Embed Angular application in any Angular application",
   "peerDependencies": {
     "@angular/common": "^10.0.14",
