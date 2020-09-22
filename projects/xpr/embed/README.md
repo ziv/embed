@@ -49,3 +49,11 @@ Preparing embedded Angular app steps:
   ```html
   <xpr-embed tag="my-app"></xpr-embed>
   ```
+
+## Embedding App Solution Explained
+This project started as research at my workplace. How to start using last Angular without updating our core legacy application (Angular 5).
+While searching for solutions using @angular/elements (converting Angular app into Web Component) - I realized that using `shadow DOM` may provide the required solution for this problem.
+`ngembed` is the results of this research.
+
+=Z=
+
